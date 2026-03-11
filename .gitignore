@@ -1,0 +1,21 @@
+/packages/
+
+# --- Build Outputs ---
+[Bb]in/
+[Oo]bj/
+
+# --- JetBrains Rider / IntelliJ ---
+.idea/
+*.sln.iml
+*.rider.module.iml
+riderModule.iml
+/_ReSharper.Caches/
+
+# --- User-specific files ---
+*.user
+*.userosscache
+*.sln.doccache
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
