@@ -44,6 +44,7 @@ public class LastPlayedPlugin : IGameLaunchingPlugin
 
         string content = $"@echo off\n" +
                          $"cd /d \"{gameFolder}\"\n" +
+                         $"timeout /t 3 /nobreak > nul\n" +
                          $"{launchCommand}";
 
         string logEntry = $"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] Launched: {game.Title} | Command: {launchCommand}{Environment.NewLine}";
